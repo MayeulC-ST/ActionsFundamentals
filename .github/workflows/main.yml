@@ -14,6 +14,7 @@ jobs:
       - run: |
           echo "Triggered from ${{ github.event_name }}"
           echo "For reference ${{ github.ref }}"
+      - uses: actions/checkout@v4.2.2
       - name: list files
         run: tree
       
