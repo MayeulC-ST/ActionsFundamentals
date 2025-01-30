@@ -9,7 +9,7 @@ on:
 
 jobs:
   Build:
-    runs-on: docker://ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - run: |
           echo "Triggered from ${{ github.event_name }}"
