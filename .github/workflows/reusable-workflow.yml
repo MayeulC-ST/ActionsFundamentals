@@ -7,10 +7,10 @@ on:
         type: string
         required: true
         default: World
-      outputs:
-        current-time:
-          description: 'The time when greeting.'
-          value: ${{ jobs.reusable-job.outputs.current-time }}
+    outputs:
+      current-time:
+        description: 'Time when greeting hapened.'
+        value: ${{ jobs.reusable-job.outputs.current-time }}
         
 jobs:
   my-reusable-job:
